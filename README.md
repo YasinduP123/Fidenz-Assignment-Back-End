@@ -71,7 +71,7 @@ weather-app-backend
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/<your-username>/weather-app.git
+git clone https://github.com/YasinduP123/weather-app.git
 cd weather-app/backend
 ```
 
