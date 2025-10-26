@@ -21,21 +21,34 @@ It integrates with **OpenWeatherMap API**, uses **JWT authentication**, and supp
 ## 🏗️ Project Structure
 
 ```
-backend/
-├── src/main/java/com/yasidu/weather_app/
-│   ├── controller/WeatherController.java
-│   ├── dto/
-│   │   ├── WeatherDto.java
-│   │   └── CityDto.java
-│   ├── service/
-│   │   ├── WeatherService.java
-│   │   └── impl/WeatherServiceImpl.java
-│   ├── util/ApiResponse.java
-│   └── WeatherAppApplication.java
-├── src/main/resources/
-│   ├── application.yml
-│   └── cities.json
-└── pom.xml
+weather-app-backend
+│
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── yasidu
+    │   │           └── weather_app
+    │   │               ├── config
+    │   │               ├── controller
+    │   │               ├── dto
+    │   │               ├── exception
+    │   │               ├── response
+    │   │               ├── service
+    │   │               │   └── impl
+    │   │               └── util
+    │   │
+    │   └── resources
+    │       ├── static
+    │       ├── templates
+    │       └── (application.yml, cities.json, etc.)
+    │
+    └── test
+        └── java
+            └── com
+                └── yasidu
+                    └── weather_app
+
 ```
 
 ---
