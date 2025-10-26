@@ -1,0 +1,49 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: weather-app
+  cache:
+    type: caffeine
+  datasource:
+    url: jdbc:mysql://localhost:3306/weatherdb
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: ${AUTH0_CLIENT_ID}
+            client-secret: ${AUTH0_CLIENT_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            issuer-uri: ${AUTH0_ISSUER_URI}
+      resourceserver:
+        jwt:
+          issuer-uri: ${AUTH0_ISSUER_URI}
+
+auth0:
+  audience: ${AUTH0_AUDIENCE}
+  domain: ${AUTH0_DOMAIN}
+
+openweather:
+  api:
+    key: ${OPENWEATHER_API_KEY}
+    base-url: https://api.openweathermap.org/data/2.5
+    timeout: 10000
+    units: metric
+
+logging:
+  level:
+    org.springframework.cache: DEBUG
+    com.github.benmanes.caffeine.cache: TRACE
