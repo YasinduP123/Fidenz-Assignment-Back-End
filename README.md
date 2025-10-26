@@ -163,7 +163,7 @@ mvn spring-boot:run
 
 **Yasidu Pathiraja**  
 Full Stack Developer | Spring Boot | React | Auth0  
-🌐 [LinkedIn](linkedin.com/in/yasindu-pathiraja-411751317) | [GitHub](https://github.com/YasinduP123)
+🌐 [LinkedIn](https://linkedin.com/in/yasindu-pathiraja-411751317) | [GitHub](https://github.com/YasinduP123)
 
 ---
 
